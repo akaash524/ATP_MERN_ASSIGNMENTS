@@ -28,7 +28,7 @@ return sameCategory
 
 export function searchProducts(query) {
 // Search products by name (case-insensitive)
-let result=products.find((e)=>e.name===query)
+let result=products.find((e)=>e.name.toLowerCase()===query.toLowerCase())
 return result
 }
 

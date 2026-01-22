@@ -7,7 +7,7 @@ const user = {
     }
 };
 //  1. Create a shallow copy of user
-const userCopy={...user,name:user.name+'omg'};
+const userCopy={...user};
 // 2. Change:
 // i. name in the copied object
 //userCopy.name="Ramu"

@@ -18,7 +18,7 @@ function addTask(title, priority, dueDate) {
     console.log('Error :',validateTitle(title))
     // Return success/error message
 }
-// addTask('AnuragUniversity','high','2026-04-22')
+// 
 // console.log(tasks)
 // 2. Get all tasks
 function getAllTasks() {
