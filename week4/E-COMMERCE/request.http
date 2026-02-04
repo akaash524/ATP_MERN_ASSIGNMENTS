@@ -1,0 +1,41 @@
+### get all users
+GET http://localhost:4000/user-api/users
+
+
+### get user by id
+GET http://localhost:4000/user-api/users/6980722432a76fbdfc2f6a11
+
+
+### add new user
+POST http://localhost:4000/user-api/users
+Content-Type: application/json
+
+{
+    "name":"sai",
+    "email":"v@gmail.com",
+    "password":"",
+    "cart":[]
+}
+
+### add product to cart
+PUT http://localhost:4000/user-api/user-cart/user-id/6980722432a76fbdfc2f6a11/product-id/698068a17ca59809a5576c9a
+
+
+### upadte qty of product
+PUT http://localhost:4000/user-api/user-cart/update/user-id/6980722432a76fbdfc2f6a11/product-id/698068a17ca59809a5576c9a
+
+### add new product 
+POST  http://localhost:4000/product-api/products
+Content-Type: application/json
+
+{
+    "productName":"ball",
+    "price":150,
+    "brand":"casco"
+}
+
+### get all products
+GET  http://localhost:4000/product-api/products
+
+
+

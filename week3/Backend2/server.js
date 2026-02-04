@@ -2,10 +2,13 @@ import exp from 'express'
 import { userApp } from './APIS/userApi.js';
 import { productApp } from './APIS/productApi.js';
 import { connect } from 'mongoose'
+import cookieParser from 'cookie-parser'
 
 //create app 
 const app=exp()
 const PORT=4000
+
+
 
 //connect to db server
 async function connectDB(){
@@ -26,9 +29,11 @@ connectDB()
 
 app.use(exp.json())
 
+app.use(cookieParser())
 //route to mini-app route
 app.use('/user-api',userApp)
 app.use('/product-api',productApp)
+
 
 //error handler middle ware   (without this is show HTML code) but now handled and shown as json.
 

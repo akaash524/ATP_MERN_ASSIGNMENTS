@@ -2,6 +2,10 @@
 GET http://localhost:4000/user-api/users
 
 
+### request for proteced roture
+GET http://localhost:4000/user-api/test
+
+
 ### Create user
 POST http://localhost:4000/user-api/users
 Content-Type: application/json
@@ -10,6 +14,17 @@ Content-Type: application/json
     "username":"samp",
     "password":"samp",
     "age":20
+}
+
+
+
+### user authenticatoin request
+POST http://localhost:4000/user-api/auth
+Content-Type: application/json
+
+{
+    "username":"samp",
+    "password":"samp"
 }
 
 
@@ -30,7 +45,10 @@ Content-Type: application/json
 
 
 ### delete user by id
-DELETE http://localhost:4000/user-api/users/697dbc6db9462d847725ce6a
+DELETE http://localhost:4000/user-api/users/698058ede24d5ac461fdbf89
+
+
+
 
 
 
