@@ -26,9 +26,9 @@ async function connectDB(){
 }
 connectDB()
 
-
+// add body parser
 app.use(exp.json())
-
+// used to pars ecookies
 app.use(cookieParser())
 //route to mini-app route
 app.use('/user-api',userApp)

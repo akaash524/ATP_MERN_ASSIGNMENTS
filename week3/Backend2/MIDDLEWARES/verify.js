@@ -11,5 +11,6 @@ export function verifyToken(req,res,next){
     //2.verify the token
     let decodedToken=jwt.verify(signedToken,'abcdef')
     console.log("decoded token:",decodedToken)
+    // back to userAPI
     next()
 }

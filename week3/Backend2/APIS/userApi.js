@@ -1,12 +1,13 @@
 import exp from 'express'
 import { UserModel } from '../models/userModel.js'
-export const userApp=exp.Router()
+
 import { verifyToken } from '../MIDDLEWARES/verify.js'
 import { hash ,compare} from 'bcryptjs'
 import jwt from 'jsonwebtoken'
+
+export const userApp=exp.Router()
+
 //user api routes
-
-
 userApp.get('/users',async (req,res)=>{
     //read users form database
     let users=await UserModel.find()
@@ -100,7 +101,7 @@ userApp.delete('/users/:id',async (req,res)=>{
 })
 
 
-//test route(protected routr)
+//test route(protected routr)  using middle ware 
 userApp.get('/test',verifyToken,(req,res)=>{
     res.json({message:"test route"})
 })
