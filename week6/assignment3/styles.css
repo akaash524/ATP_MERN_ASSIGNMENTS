@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+nav{
+    padding: 50px 100px;
+    background-color: rgb(202, 201, 201);
+}
+h1{
+    font-size: 50px;
+}
+nav button{
+    padding: 10px;
+    background: rgb(20, 74, 236);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    margin-top: 10px;
+}
+
+
+
+.card{
+    width: 300px;
+}
+.row{
+    padding: 50px 100px;
+    display: flex;
+    justify-content: space-between;
+}
+main button{
+    padding: 10px;
+    background: rgb(111, 112, 118);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    margin-top: 10px;
+}
+
+footer{
+    padding: 50px 100px;
+}
+p{
+    margin-top: 10px;
+}
